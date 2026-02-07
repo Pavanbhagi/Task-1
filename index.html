@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Creative Studio 2026</title>
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;900&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="particles" id="particles"></div>
+
+    <div class="shapes">
+        <div class="shape"></div>
+        <div class="shape"></div>
+        <div class="shape"></div>
+    </div>
+
+    <div class="container">
+        <header>
+            <h1>AI CREATIVE STUDIO</h1>
+            <p class="subtitle">Powered by Claude AI • 2026</p>
+        </header>
+
+        <div class="studio">
+            <div class="canvas-area">
+                <div class="glass-card canvas-output" id="output">
+                    <div class="placeholder" id="placeholder">
+                        ✨ Your AI-generated content will appear here
+                    </div>
+                    <div class="output-content" id="content" style="display:none;"></div>
+                </div>
+            </div>
+
+            <div class="glass-card control-panel">
+                <h2>🎨 Create with AI</h2>
+
+                <div class="input-group">
+                    <label>Creative Mode</label>
+                    <select id="mode">
+                        <option value="story">📖 Story Generator</option>
+                        <option value="poem">🎭 Poetry Creator</option>
+                        <option value="code">💻 Code Assistant</option>
+                        <option value="business">💼 Business Idea</option>
+                        <option value="recipe">🍳 Recipe Inventor</option>
+                        <option value="quiz">🧩 Quiz Generator</option>
+                    </select>
+                </div>
+
+                <div class="input-group">
+                    <label>Your Prompt</label>
+                    <textarea id="prompt" placeholder="Describe what you want to create..."></textarea>
+                </div>
+
+                <button class="btn btn-primary" id="generateBtn">Generate ✨</button>
+                <button class="btn btn-secondary" id="clearBtn">Clear Canvas</button>
+            </div>
+        </div>
+
+        <div class="features">
+            <div class="feature-card">
+                <div class="feature-icon">🤖</div>
+                <h3>AI-Powered</h3>
+                <p>Leverages Claude Sonnet 4.5 for intelligent content</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">⚡</div>
+                <h3>Real-Time</h3>
+                <p>Instant generation with smooth UI</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">🎨</div>
+                <h3>Multi-Mode</h3>
+                <p>Stories, poems, code & more</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">✨</div>
+                <h3>Modern UI</h3>
+                <p>Minimalist animated design</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- JS -->
+    <script src="script.js"></script>
+</body>
+</html>
